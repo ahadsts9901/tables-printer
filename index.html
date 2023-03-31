@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Table Printer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- icons cdn -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- font cdn -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+    <!-- bootstrap cdn -->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+
+    <!-- animate.style cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src='main.js'></script>
+</head>
+
+<body>
+
+    <header>
+        <h2>Table Printer</h2>
+    </header>
+
+    <p class="message">This Is A Table Printer</p>
+    <p class="message">You Can Print Tables Through It</p>
+
+    <form>
+        <fieldset>
+            <legend>
+                <h2>Input</h2>
+            </legend>
+            <h2>Which Table You Want To Print?</h2>
+            <row>
+                <input required class="input" type="number" id="table-number" placeholder="Which Table">
+            </row>
+            <h2>Enter Limitations</h2>
+            <row>
+                <column>
+                    <h3>From</h3>
+                    <input required class="input" type="number" id="first-number" placeholder="From" value="1">
+                </column>
+                <column>
+                    <h3>To</h3>
+                    <input required class="input" type="number" id="second-number" placeholder="To" value="10">
+                </column>
+            </row>
+        </fieldset>
+        <button type="submit" class="button" onclick="Table(event)">Print</button></row>
+    </form>
+
+    <result>
+        <fieldset>
+            <legend>
+                <h2>Result</h2>
+            </legend>
+            <center>
+                <h3 class="inline">Table Of</h3>
+                <h3 id="table" class="inline">0</h3>
+            </center>
+            <p class="result" id="result"></p>
+        </fieldset>
+    </result>
+    <br />
+    <hr />
+    <p class="center">Thanks For Visiting</p>
+    <p class="center">Regards! Muhammad Ahad&copy;</p>
+</body>
+
+</html>
